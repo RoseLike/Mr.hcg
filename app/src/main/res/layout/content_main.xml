@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.hcc.daymediohomework.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/titleId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:layout_margin="10dp"
+        android:textColor="#0ff"
+        android:text="音乐播放器" />
+    <ImageView
+        android:id="@+id/imageId"
+        android:layout_gravity="center_horizontal"
+        android:src="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/nameId"
+        android:hint="请输入您的帐户名"
+        android:textSize="30sp"
+        android:inputType="text"
+        android:layout_margin="10dp"
+        android:imeOptions="actionNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/passwordId"
+        android:hint="请输入您的密码"
+        android:textSize="30sp"
+        android:inputType="textPassword"
+        android:layout_margin="10dp"
+        android:imeOptions="actionNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/buttonId"
+            android:text="登录"
+            android:textSize="30sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/buttonId2"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:textSize="30sp"
+            android:text="没有账号？请注册"
+            android:textColor="@android:color/holo_blue_bright"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+</LinearLayout>
